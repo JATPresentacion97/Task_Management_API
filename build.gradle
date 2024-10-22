@@ -19,10 +19,23 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'jakarta.servlet:jakarta.servlet-api:2.0.0' // Add this line
+	implementation 'com.h2database:h2'
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	implementation 'org.projectlombok:lombok'
+	compileOnly 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
+
+
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
 }
