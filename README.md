@@ -33,12 +33,15 @@ A RESTful API for managing tasks, built with Spring Boot, Gradle, and Spring Sec
 git clone https://github.com/yourusername/task-management-api.git
 cd task-management-api
 ```
+
 # Run the Application
 
 You can run the application directly from your IDE or by using the following command:
 
 ```bash
 ./gradlew bootRun
+```
+
 The application will start on http://localhost:8080.
 
 API Endpoints
@@ -46,13 +49,15 @@ Authentication
 Login: POST /api/auth/login
 
 Request Body:
-
+```bash
 json
 Copy code
 {
   "username": "your_username",
   "password": "your_password"
 }
+```
+
 Tasks
 Get All Tasks: GET /api/tasks
 
