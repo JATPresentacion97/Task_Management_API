@@ -32,7 +32,7 @@ A RESTful API for managing tasks, built with Spring Boot, Gradle, and Spring Sec
 ```bash
 git clone https://github.com/yourusername/task-management-api.git
 cd task-management-api
-
+```
 # Run the Application
 
 You can run the application directly from your IDE or by using the following command:
