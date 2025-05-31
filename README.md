@@ -49,43 +49,39 @@ Authentication
 Login: POST /api/auth/login
 
 Request Body:
-```bash
-json
-Copy code
+```json
 {
   "username": "your_username",
   "password": "your_password"
 }
 ```
 
-Tasks
+### Tasks
 Get All Tasks: GET /api/tasks
 
 Get Task by ID: GET /api/tasks/{id}
 
 Create a New Task: POST /api/tasks
 
-Request Body:
+### Request Body:
 
-json
-Copy code
+```json
 {
   "title": "Task Title",
   "description": "Task Description"
-}
+}```
 Update Task: PUT /api/tasks/{id}
 
-Request Body:
+### Request Body:
 
-json
-Copy code
+```json
 {
   "title": "Updated Task Title",
   "description": "Updated Task Description"
-}
+}```
 Delete Task: DELETE /api/tasks/{id}
 
-Database
+### Database
 This project uses an H2 in-memory database for data persistence. You can access the H2 console at http://localhost:8080/h2-console with the following credentials:
 
 JDBC URL: jdbc:h2:mem:testdb
@@ -94,16 +90,15 @@ Password: (leave blank)
 Running Tests
 To run the unit tests, use the following command:
 
-bash
-Copy code
-./gradlew test
+```bash
+./gradlew test```
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contributing
+### Contributing
 Contributions are welcome! Please fork this repository and create a pull request for any features, improvements, or bug fixes.
 
-Acknowledgments
+### Acknowledgments
 Spring Boot
 Spring Security
 H2 Database
