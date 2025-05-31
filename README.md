@@ -50,7 +50,6 @@ Login: POST /api/auth/login
 
 Request Body:
 ```json
-copy code
 {
   "username": "your_username",
   "password": "your_password"
@@ -70,7 +69,8 @@ Create a New Task: POST /api/tasks
 {
   "title": "Task Title",
   "description": "Task Description"
-}```
+}
+```
 Update Task: PUT /api/tasks/{id}
 
 ### Request Body:
@@ -79,7 +79,8 @@ Update Task: PUT /api/tasks/{id}
 {
   "title": "Updated Task Title",
   "description": "Updated Task Description"
-}```
+}
+```
 Delete Task: DELETE /api/tasks/{id}
 
 ### Database
@@ -92,8 +93,9 @@ Running Tests
 To run the unit tests, use the following command:
 
 ```bash
-./gradlew test```
-License
+./gradlew test
+```
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Contributing
