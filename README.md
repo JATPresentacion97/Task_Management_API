@@ -50,6 +50,7 @@ Login: POST /api/auth/login
 
 Request Body:
 ```json
+copy code
 {
   "username": "your_username",
   "password": "your_password"
